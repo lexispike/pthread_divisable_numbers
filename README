@@ -1,0 +1,24 @@
+Alyxandra Spikerman
+Written for a course at Northeastern University: High Performance Computing
+
+Q2.cpp
+
+
+The program creates 4 threads and 4 semaphores. Each thread checks numbers 1 - 1000 and prints out each one divisible by 3 or 4. The threads use semaphores to control the output of the number. It will print thread 0 -> 1 -> 2 -> 3 and then repeat. Then, it increases a count value that then prints at the end and describes how many values were divisible by 3 or 4 overall. The value printed is 500.
+
+
+--HOW TO COMPILE--
+g++ -lpthread -std=c++11 Q2.cpp -o Q2
+
+OR
+
+make Q2
+
+--HOW TO RUN--
+
+make run_Q2
+
+OR
+
+./Q2
+
